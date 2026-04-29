@@ -21,7 +21,7 @@ jobs:
           REPO_URL: ${{ github.event.repository.html_url }}
         run: |
           python3 -c "
-          import json, os, urllib.request
+          import json, os, urllib.request, urllib.error
           payload = {
             'embeds': [{
               'title': f\"{os.environ['REPO']} — new push\",
@@ -40,5 +40,10 @@ jobs:
             headers={'Content-Type': 'application/json'},
             method='POST'
           )
-          urllib.request.urlopen(req)
+          try:
+            urllib.request.urlopen(req)
+            print('Notification sent successfully')
+          except urllib.error.HTTPError as e:
+            print(f'HTTP {e.code}: {e.read().decode()}')
+            raise
           "
