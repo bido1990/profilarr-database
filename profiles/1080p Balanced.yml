@@ -17,8 +17,8 @@ tags:
 - x264
 - h264
 upgradesAllowed: true
-minCustomFormatScore: 20000
-upgradeUntilScore: 888888
+minCustomFormatScore: 0
+upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats:
 - name: 1080p WEB-DL
@@ -213,14 +213,476 @@ custom_formats_radarr:
 - name: Upscale
   score: -999999
 custom_formats_sonarr:
+- name: TrueHD ATMOS - Notifiarr
+  score: 5000
+- name: DTS X
+  score: 4500
+- name: DD+ ATMOS - Notifiarr
+  score: 3000
+- name: ATMOS (undefined) - Notifiarr
+  score: 3000
+- name: TrueHD - Notifiarr
+  score: 2750
+- name: DTS-HD MA - Notifiarr
+  score: 2500
+- name: FLAC
+  score: 2250
+- name: PCM - Notifiarr
+  score: 2250
+- name: FLAC - Notifiarr
+  score: 2250
+- name: DTS-HD HRA
+  score: 2000
+- name: DTS-HD HRA - Notifiarr
+  score: 2000
+- name: Remux Tier 01 - Notifiarr
+  score: 1900
+- name: Remux Tier 02 - Notifiarr
+  score: 1850
+- name: HD Bluray Tier 01 - Notifiarr
+  score: 1800
+- name: HD Bluray Tier 02 - Notifiarr
+  score: 1750
+- name: DD+ - Notifiarr
+  score: 1750
+- name: WEB Tier 01
+  score: 1700
+- name: WEB Tier 02
+  score: 1650
+- name: WEB Tier 03
+  score: 1600
+- name: WEB Scene
+  score: 1600
+- name: DTS-ES
+  score: 1500
+- name: DTS-ES - Notifiarr
+  score: 1500
+- name: DV - Notifiarr
+  score: 1500
+- name: DV SDR - Notifiarr
+  score: 1500
+- name: DV HLG - Notifiarr
+  score: 1500
+- name: DV HDR10+ - Notifiarr
+  score: 1500
+- name: DTS
+  score: 1250
+- name: DTS - Notifiarr
+  score: 1250
+- name: AAC
+  score: 1000
+- name: AAC - Notifiarr
+  score: 1000
+- name: DD - Notifiarr
+  score: 750
+- name: HDR10+ - Notifiarr
+  score: 600
+- name: MP3 - Notifiarr
+  score: 500
+- name: PQ - Notifiarr
+  score: 500
+- name: HLG - Notifiarr
+  score: 500
+- name: HDR10 - Notifiarr
+  score: 500
+- name: HDR - Notifiarr
+  score: 500
+- name: HDR (undefined) - Notifiarr
+  score: 500
+- name: Opus
+  score: 250
+- name: Opus - Notifiarr
+  score: 250
+- name: DV (Disk) - Notifiarr
+  score: 101
+- name: iP
+  score: 75
+- name: CRAV
+  score: 75
+- name: HTSR
+  score: 75
+- name: NOW
+  score: 75
+- name: UHD Streaming Boost
+  score: 75
+- name: AMZN
+  score: 75
+- name: ATVP
+  score: 75
+- name: CC
+  score: 75
+- name: DCU
+  score: 75
+- name: DSNP
+  score: 75
+- name: HMAX
+  score: 75
+- name: HBO
+  score: 75
+- name: HULU
+  score: 75
+- name: iT
+  score: 75
+- name: MAX
+  score: 75
+- name: NF
+  score: 75
+- name: PMTP
+  score: 75
+- name: PCOK
+  score: 75
+- name: SHO
+  score: 75
+- name: STAN
+  score: 75
+- name: SYFY
+  score: 75
+- name: UHD Streaming Boost - Notifiarr
+  score: 20
 - name: Season Pack
   score: 10
-- name: Remux (Source)
-  score: -999999
+- name: Season Pack - Notifiarr
+  score: 10
+- name: INTERNAL - Notifiarr
+  score: 10
+- name: 'Language: Prefer Italian'
+  score: 10
+- name: Repack3
+  score: 7
+- name: Repack v3
+  score: 7
+- name: Repack2
+  score: 6
+- name: Repack v2
+  score: 6
+- name: Repack/Proper
+  score: 5
+- name: FreeLeech - Notifiarr
+  score: 1
+- name: German DL
+  score: 0
+- name: ASL
+  score: 0
+- name: HONE Bluray
+  score: 0
+- name: HONE WEB
+  score: 0
+- name: 1080p Compact TV WEB Tier 3
+  score: 0
+- name: 1080p Compact TV Bluray Tier 1
+  score: 0
+- name: 1080p Compact TV Trash Tier 2
+  score: 0
+- name: DRPO
+  score: 0
+- name: 720p HDTV Tier 2
+  score: 0
+- name: 1080p Compact TV Bluray Tier 5
+  score: 0
+- name: 480p Quality Tier 2
+  score: 0
+- name: 480p Quality Tier 4
+  score: 0
+- name: 576p Bluray
+  score: 0
+- name: 576p Quality Tier 1
+  score: 0
+- name: SDTV
+  score: 0
+- name: 720p HDTV Tier 1
+  score: 0
+- name: MUBI
+  score: 0
+- name: 1080p Compact TV Trash Tier 1
+  score: 0
+- name: 1080p Compact TV WEB Tier 5
+  score: 0
+- name: 480p Quality Tier 1
+  score: 0
+- name: UHD Bluray (Efficient)
+  score: 0
+- name: 1080p Compact TV WEB Tier 2
+  score: 0
+- name: 1080p HDTV Tier 2
+  score: 0
+- name: 720p HDTV Tier 3
+  score: 0
+- name: CRIT
+  score: 0
+- name: 1080p Compact TV WEB Tier 1
+  score: 0
+- name: 576p Quality Tier 3
+  score: 0
+- name: 720p HDTV
+  score: 0
+- name: 1080p Compact TV Bluray Tier 4
+  score: 0
+- name: 576p Quality Tier 2
+  score: 0
+- name: 1080p Compact TV Bluray Tier 6
+  score: 0
+- name: Weasley WEB
+  score: 0
+- name: 1080p HDTV
+  score: 0
+- name: SDTV Tier 1
+  score: 0
+- name: 1080p Compact TV Bluray Tier 3
+  score: 0
+- name: 480p Bluray
+  score: 0
+- name: PLAY
+  score: 0
+- name: 1080p HDTV Tier 1
+  score: 0
+- name: 1080p Compact TV WEB Tier 4
+  score: 0
+- name: 480p Quality Tier 3
+  score: 0
+- name: 1080p HDTV Tier 3
+  score: 0
+- name: 576p Quality Tier 4
+  score: 0
+- name: 1080p Compact TV Bluray Tier 2
+  score: 0
+- name: Not Italian
+  score: 0
+- name: 1080p WEB-DL (h264)
+  score: 0
+- name: 1080p Bluray HEVC Tier 1
+  score: 0
+- name: DVD Remux
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 2
+  score: 0
+- name: DVD
+  score: 0
+- name: h265 (Efficient)
+  score: 0
+- name: 480p WEB-DL
+  score: 0
+- name: 1080p Efficient TV WEB Tier 2
+  score: 0
+- name: 1080p Efficient TV WEB Tier 4
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 5
+  score: 0
+- name: 720p WEBRip
+  score: 0
+- name: Dolby Atmos
+  score: 0
+- name: Lossless Audio
+  score: 0
+- name: Full Disc
+  score: 0
+- name: 720p Quality Tier 3
+  score: 0
+- name: BCORE
+  score: 0
+- name: WEB-DL Tier 2
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 6
+  score: 0
+- name: 1080p Efficient TV WEB Tier 1
+  score: 0
 - name: TV Extras
-  score: -999999
+  score: 0
+- name: Dolby Vision
+  score: 0
+- name: DS4K
+  score: 0
+- name: VP9
+  score: 0
+- name: QxR Bluray
+  score: 0
+- name: 720p Quality Tier 6
+  score: 0
+- name: 1080p Efficient TV WEB Tier 6
+  score: 0
+- name: Dolby Digital +
+  score: 0
+- name: VVC
+  score: 0
+- name: WEB-DL Tier 4
+  score: 0
+- name: 720p WEB-DL
+  score: 0
+- name: Banned WEBRip (Efficient)
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 1
+  score: 0
+- name: 1080p Efficient TV WEB Tier 5
+  score: 0
+- name: 720p Quality Tier 5
+  score: 0
+- name: WEB-DL Tier 1
+  score: 0
+- name: Banned Groups (Title)
+  score: 0
+- name: 720p Balanced Tier 1
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 4
+  score: 0
+- name: Remux
+  score: 0
+- name: Remux (Source)
+  score: 0
+- name: QxR WEB
+  score: 0
+- name: Dolby Vision (Without Fallback)
+  score: 0
+- name: Banned Groups (Efficient)
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 7
+  score: 0
+- name: Vialle WEB
+  score: 0
+- name: TAoE WEB
+  score: 0
+- name: SD Quality Tier 1
+  score: 0
+- name: Vialle Bluray
+  score: 0
+- name: 720p Quality Tier 1
+  score: 0
+- name: x265 (Efficient)
+  score: 0
+- name: WEB-DL Tier 5
+  score: 0
+- name: SD Quality Tier 2
+  score: 0
+- name: 720p Quality Tier 4
+  score: 0
+- name: Repack1
+  score: 0
+- name: 720p Bluray
+  score: 0
+- name: Xvid
+  score: 0
+- name: 1080p Efficient TV Bluray Tier 3
+  score: 0
+- name: ROKU
+  score: 0
+- name: 1080p Balanced Tier 1
+  score: 0
+- name: 1080p Efficient TV WEB Tier 3
+  score: 0
+- name: WEB-DL Tier 3
+  score: 0
+- name: Dolby Digital
+  score: 0
+- name: 1080p WEB-DL HEVC Tier 1
+  score: 0
+- name: TAoE Bluray
+  score: 0
+- name: 720p Quality Tier 2
+  score: 0
+- name: ATV
+  score: 0
+- name: 'Language: Not Italian #2'
+  score: 0
+- name: x265 - Notifiarr
+  score: 0
+- name: x264 - Notifiarr
+  score: 0
+- name: VP9 - Notifiarr
+  score: 0
+- name: Multi - Notifiarr
+  score: 0
+- name: MPEG2 - Notifiarr
+  score: 0
+- name: HFR - Notifiarr
+  score: 0
+- name: HDR10+ Boost - Notifiarr
+  score: 0
+- name: DV HDR10+ Boost - Notifiarr
+  score: 0
+- name: 7.1 Surround - Notifiarr
+  score: 0
+- name: 6.1 Surround - Notifiarr
+  score: 0
+- name: 5.1 Surround - Notifiarr
+  score: 0
+- name: 4.0 Sound - Notifiarr
+  score: 0
+- name: 2.0 Stereo - Notifiarr
+  score: 0
+- name: 1.0 Mono - Notifiarr
+  score: 0
+- name: PQ
+  score: 0
+- name: HDR (undefined)
+  score: 0
+- name: HDR
+  score: 0
+- name: HDR10
+  score: 0
+- name: HDR10+
+  score: 0
+- name: DV SDR
+  score: 0
+- name: DV HLG
+  score: 0
+- name: DV
+  score: 0
+- name: DV HDR10+
+  score: 0
+- name: 'Language: Not English'
+  score: 0
+- name: 'Language: Not English or Italian'
+  score: 0
+- name: 'Language: Not Original'
+  score: 0
+- name: 3.0 Sound
+  score: 0
+- name: DV HDR10
+  score: 0
+- name: UHD Streaming Cut - Notifiarr
+  score: -20
+- name: UHD Streaming Cut
+  score: -20
 - name: Upscaled
-  score: -999999
+  score: -10000
+- name: x266 - Notifiarr
+  score: -10000
+- name: Upscaled - Notifiarr
+  score: -10000
+- name: SDR - Notifiarr
+  score: -10000
+- name: SDR (no WEBDL) - Notifiarr
+  score: -10000
+- name: Scene - Notifiarr
+  score: -10000
+- name: Retags - Notifiarr
+  score: -10000
+- name: Obfuscated - Notifiarr
+  score: -10000
+- name: No-RlsGroup - Notifiarr
+  score: -10000
+- name: DV (WEBDL) - Notifiarr
+  score: -10000
+- name: Bad Dual Groups - Notifiarr
+  score: -10000
+- name: x265 (no HDR/DV) - Notifiarr
+  score: -10000
+- name: x265 (no HDR/DV)
+  score: -10000
+- name: HLG
+  score: -10000
+- name: 'Language: Not Italian'
+  score: -10000
+- name: BR-DISK
+  score: -10000
+- name: LQ
+  score: -10000
+- name: LQ (Release Title)
+  score: -10000
+- name: x265 (HD)
+  score: -10000
+- name: Extras
+  score: -10000
+- name: AV1
+  score: -10000
 qualities:
 - id: -1
   name: 1080p Balanced
